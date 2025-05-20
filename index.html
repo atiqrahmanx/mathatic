@@ -1,4 +1,69 @@
-<h1>welcome to mathatic</h1>
-<div style="text-align:center; margin-top:20px;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mathatic</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #f8fafc 0%, #e9ecef 100%);
+      min-height: 100vh;
+      margin: 0;
+      font-family: 'Roboto', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    h1 {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 2.5rem;
+      color: #222b38;
+      margin-top: 60px;
+      margin-bottom: 28px;
+      letter-spacing: 1.5px;
+      text-shadow: none;
+      text-align: center;
+    }
+    .video-container {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 4px 24px rgba(44, 62, 80, 0.10);
+      padding: 28px 18px 18px 18px;
+      display: inline-block;
+      margin-top: 16px;
+      border: 1px solid #e3e7ed;
+      transition: box-shadow 0.3s;
+    }
+    .video-container:hover {
+      box-shadow: 0 8px 32px rgba(44, 62, 80, 0.16);
+    }
+    iframe {
+      border-radius: 12px;
+      border: none;
+      box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      .video-container {
+        padding: 10px 2px 6px 2px;
+      }
+      iframe {
+        width: 90vw;
+        height: 50vw;
+        min-width: 200px;
+        min-height: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to mathatic</h1>
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+</body>
+</html>
